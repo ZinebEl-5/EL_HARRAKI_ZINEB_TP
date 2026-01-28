@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e0e7ff, #f0f9ff);
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+.photo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 6px 15px gray;
+    margin-bottom: 20px;
+}
+
+/* MENU */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    background-color: #1e40af;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+main {
+    padding: 30px;
+}
+
+/* SECTIONS */
+section, article {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #1e3a8a;
+}
+
+/* CARTE MENTALE */
+.mindmap {
+    list-style: none;
+}
+
+.mindmap > li {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mindmap ul {
+    margin-left: 20px;
+}
+
+/* TABLEAU */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #1e40af;
+    color: white;
+}
+
+td, th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* QR CODE */
+.qrcode {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+.qrcode img {
+    width: 100px;
+    height: 100px;
+}
+
+/* BOUTONS */
+.top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1e40af;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.mail-btn {
+    display: inline-block;
+    background-color: #16a34a;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.copyright {
+    color: #facc15;
+    font-weight: bold;
+}
