@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>De l’idée à la technologie</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        h1 {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 20px 40px;
+            border-radius: 25px;
+            text-shadow: 2px 2px 6px black;
+            display: inline-block;
+        }
+
+        .hidden {
+            display: none; /* Sections cachées par défaut */
+        }
+
+        .mail-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #1e3a8a;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .qrcode img {
+            width: 120px;
+            height: 120px;
+        }
+
+        .top-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #1e3a8a;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        /* ===== Style du menu ===== */
+        nav {
+            background-color: #1e3a8a;
+            padding: 10px 0;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #3b5dc9;
+        }
+    </style>
+
+    <script>
+        // Affiche la section cliquée et cache les autres
+        function afficherSection(id) {
+            const sections = document.querySelectorAll("main section");
+            sections.forEach(sec => sec.classList.add("hidden")); // cacher toutes
+            const section = document.getElementById(id);
+            if(section) section.classList.remove("hidden"); // afficher la sélection
+        }
+
+        // Affiche l'email dans une alerte
+        function afficherEmail() {
+            alert("Mon email : elharrakizineb@gmail.com");
+        }
+    </script>
+</head>
+
+<body id="top">
+
+<header>
+    <img src="photo.jpg" alt="Innovation technologique" class="photo">
+    <h1>Comment une idée devient une technologie</h1>
+</header>
+
+<!-- Menu restauré avec style visible et couleur de fond -->
+<nav>
+    <ul>
+        <li><a href="javascript:void(0)" onclick="afficherSection('idee')">Idée</a></li>
+        <li><a href="javascript:void(0)" onclick="afficherSection('recherche')">Recherche</a></li>
+        <li><a href="javascript:void(0)" onclick="afficherSection('prototype')">Prototype</a></li>
+        <li><a href="javascript:void(0)" onclick="afficherSection('carte')">Carte mentale</a></li>
+        <li><a href="javascript:void(0)" onclick="afficherSection('tableau')">Exemples</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<!-- Section "Idée" visible par défaut -->
+<section id="idee">
+    <h2>1. Naissance de l’idée</h2>
+    <p>
+        Toute innovation technologique commence par une idée. Cette idée peut
+        provenir d’un besoin humain, d’un problème scientifique ou d’une
+        observation du monde réel.
+    </p>
+</section>
+
+<!-- Les autres sections cachées -->
+<section id="recherche" class="hidden">
+    <h2>2. Recherche scientifique</h2>
+    <article>
+        <p>
+            La recherche permet de vérifier si l’idée est réalisable. Elle repose
+            sur des modèles mathématiques, des expériences, des simulations et
+            des études théoriques.
+        </p>
+    </article>
+</section>
+
+<section id="prototype" class="hidden">
+    <h2>3. Prototype</h2>
+    <p>
+        Le prototype est une version expérimentale de la technologie. Il sert
+        à tester les performances, détecter les défauts et améliorer le concept.
+    </p>
+</section>
+
+<section id="carte" class="hidden">
+    <h2>Carte mentale : de l’idée à la technologie</h2>
+    <ul class="mindmap">
+        <li>Idée
+            <ul>
+                <li>Problème</li>
+                <li>Besoin</li>
+                <li>Créativité</li>
+            </ul>
+        </li>
+        <li>Recherche
+            <ul>
+                <li>Études scientifiques</li>
+                <li>Modélisation</li>
+                <li>Simulation</li>
+            </ul>
+        </li>
+        <li>Prototype
+            <ul>
+                <li>Tests</li>
+                <li>Corrections</li>
+            </ul>
+        </li>
+        <li>Technologie
+            <ul>
+                <li>Production</li>
+                <li>Commercialisation</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section id="tableau" class="hidden">
+    <h2>Exemples concrets</h2>
+    <table>
+        <tr>
+            <th>Idée initiale</th>
+            <th>Domaine</th>
+            <th>Prototype</th>
+            <th>Technologie finale</th>
+        </tr>
+        <tr>
+            <td>Communiquer à distance</td>
+            <td>Communication</td>
+            <td>Télégraphe</td>
+            <td>Smartphone</td>
+        </tr>
+        <tr>
+            <td>Calcul rapide</td>
+            <td>Informatique</td>
+            <td>Machine mécanique</td>
+            <td>Ordinateur</td>
+        </tr>
+        <tr>
+            <td>Énergie renouvelable</td>
+            <td>Énergie</td>
+            <td>Prototype solaire</td>
+            <td>Panneau solaire</td>
+        </tr>
+    </table>
+</section>
+
+<!-- Bouton contact -->
+<button class="mail-btn" onclick="afficherEmail()">📧 Me contacter</button>
+
+</main>
+
+<aside class="qrcode">
+    <img src="qrcode.png" alt="QR Code GitHub Pages">
+</aside>
+
+<a href="#top" class="top-btn">⬆</a>
+
+<footer>
+    <p class="copyright">© Zineb El Harraki</p>
+    <pre>
+ _____ 
+|__  /
+  / / 
+ / /_ 
+/____|
+    </pre>
+</footer>
+</body>
+</html>
